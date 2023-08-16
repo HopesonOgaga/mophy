@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/output.css" />
     <title>Document</title>
   </head>
-  <body class="ml-8 mr-8 mt-4">
+  <body class="md:ml-8 md:mr-8 mt-4">
     <header>
       <!-- header nav -->
       <section class="flex  justify-between cursor-pointer">
@@ -20,28 +20,28 @@
         
         </div>
           <!-- search -->
-          <div class=" flex flex-row w-1/4  ">
+          <div class=" hidden  flex flex-row w-1/4  md:block">
             <img class="w-10  h-6 absolute top-8 pl-4 " src="./icons/search.png" alt="" srcset="">
             <input class=" bg-gray-300 w-full  rounded-2xl h-12 shadow-md  border-transparent active:border-transparent " type="search" name="" id=""> <img class=" " src="./icons/search." alt="" srcset="">
           </div>
        
       
           <!-- cloud section -->
-          <div class="flex bg-gray-300 border-solid shadow-md rounded-full w-48  ">
-            <div class="bg-sky-600 rounded-full  flex w-24 shadow-md border-solid justify-center gap-4 hover:bg-sky-800 h-full  ">
-              <img class="w-6  bg-transparent " src="./icons/cloud.png" alt="" srcset="">
+          <div class="hidden md:flex md:flex-row md:block bg-gray-300 border-solid shadow-md rounded-full w-48  ">
+            <div class="bg-sky-600 rounded-full  flex  w-24 shadow-md border-solid justify-center gap-4 hover:bg-sky-800 h-full  ">
+              <img class="w-6 h  bg-transparent " src="./icons/cloud.png" alt="" srcset="">
               <p class="text-white text-xs font-semibold py-4 ">21</p>
            </div>
             <div>
               <p class="text-center pl-2  py-4  capitalize text-xs font-medium ">medan, <span class="uppercase ">idn</span></p>
             </div>
           </div>
-          <div class="flex  gap-6 ">
+          <div class="md:flex hidden  gap-6 md:block  ">
             <div class="rounded-full w-10 h-10    shadow-xl flex items-center justify-center "><img class="w-4 h-6 " src="./icons/bell.png" alt="" srcset=""></div>
              <div  class="rounded-full w-10 h-10   shadow-xl flex items-center justify-center "><img class="w-4 h-6 " src="./icons/comment.png" alt="" srcset=""></div>
           </div>
 
-          <div class="flex  gap-4 ">
+          <div class="gap-4 hidden md:block md:flex md:flex-row ">
             <div>
               <p class="font-medium text-xs capitalize">hello,<span class="font-semibold capitalize">fraklin</span></p>
               <p class="font-light text-xs ">super admin</p>
@@ -49,6 +49,9 @@
             <div  class="rounded-full w-10 h-10    shadow-md flex items-center justify-center "> <img class="w-8 " src="./icons/settings.png" alt="" srcset=""></div>
             <div  class="rounded-full w-10 h-10    shadow-md flex items-center justify-center "> <img class="w-8 " src="./icons/settings.png" alt="" srcset=""></div>
            
+          </div>
+          <div class="md:hidden">
+            <a href="http://"><img class="w-12  h-12  " src="./icons/hamburger.png" alt="" srcset=""></a>
           </div>
       </section>
     </header>
@@ -92,7 +95,6 @@
             </div>
             <a class="capitalize text-sm font-semibold text-gray-600 py-4  hover:text-black" href="http://">settings</a>
           </div>
-         
         </div>
         <div></div>
       </section>
